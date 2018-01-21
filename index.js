@@ -41,7 +41,7 @@ pool.query('SELECT * FROM "Question" LIMIT 100;', (err, table) => {
   if(err) {
     console.log(err)
   }
-  console.log('Finished Successfully', table.rows)
+  // console.log('Finished Successfully', table.rows)
   pool.end()
 })
 //

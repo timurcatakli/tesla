@@ -8,8 +8,9 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
+          compact: true,
           presets: ['env', 'react'],
           plugins: ['transform-class-properties']
         }
